@@ -1,0 +1,25 @@
+[0.014s] Invoking command in '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description -- -j20 -l20
+[0.034s] Invoked command in '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description -- -j20 -l20
+[0.056s] Invoking command in '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description
+[0.061s] -- Install configuration: "Release"
+[0.061s] -- Execute custom install script
+[0.061s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/urdf/sensor_kit.xacro
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/urdf/sensors.xacro
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/config/sensor_kit_calibration.yaml
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/config/sensors_calibration.yaml
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/package_run_dependencies/twizy_sensor_kit_description
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/parent_prefix_path/twizy_sensor_kit_description
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/ament_prefix_path.sh
+[0.062s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/ament_prefix_path.dsv
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/path.sh
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/path.dsv
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.bash
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.sh
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.zsh
+[0.063s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.dsv
+[0.063s] -- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/package.dsv
+[0.069s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/packages/twizy_sensor_kit_description
+[0.069s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/cmake/twizy_sensor_kit_descriptionConfig.cmake
+[0.069s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/cmake/twizy_sensor_kit_descriptionConfig-version.cmake
+[0.069s] -- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/package.xml
+[0.071s] Invoked command in '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description

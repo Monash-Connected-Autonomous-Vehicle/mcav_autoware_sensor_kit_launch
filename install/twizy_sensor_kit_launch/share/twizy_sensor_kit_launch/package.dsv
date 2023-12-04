@@ -1,0 +1,8 @@
+source;share/twizy_sensor_kit_launch/hook/cmake_prefix_path.ps1
+source;share/twizy_sensor_kit_launch/hook/cmake_prefix_path.dsv
+source;share/twizy_sensor_kit_launch/hook/cmake_prefix_path.sh
+source;share/twizy_sensor_kit_launch/local_setup.bash
+source;share/twizy_sensor_kit_launch/local_setup.dsv
+source;share/twizy_sensor_kit_launch/local_setup.ps1
+source;share/twizy_sensor_kit_launch/local_setup.sh
+source;share/twizy_sensor_kit_launch/local_setup.zsh

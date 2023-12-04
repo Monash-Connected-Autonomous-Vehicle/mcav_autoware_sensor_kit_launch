@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000163] (-) JobUnselected: {'identifier': 'AWSIM_sensor_description'}
+[0.000191] (-) JobUnselected: {'identifier': 'AWSIM_sensor_launch'}
+[0.001197] (-) JobUnselected: {'identifier': 'CARLA_sensor_description'}
+[0.001248] (-) JobUnselected: {'identifier': 'CARLA_sensor_launch'}
+[0.001263] (-) JobUnselected: {'identifier': 'ENV200_sensor_description'}
+[0.001275] (-) JobUnselected: {'identifier': 'ENV200_sensor_launch'}
+[0.001287] (-) JobUnselected: {'identifier': 'Twizy_sensor_description'}
+[0.001324] (-) JobUnselected: {'identifier': 'Twizy_sensor_launch'}
+[0.001361] (-) JobUnselected: {'identifier': 'sample_sensor_kit_description'}
+[0.001375] (-) JobUnselected: {'identifier': 'sample_sensor_kit_launch'}
+[0.001389] (common_sensor_launch) JobQueued: {'identifier': 'common_sensor_launch', 'dependencies': OrderedDict()}
+[0.001406] (twizy_sensor_kit_description) JobQueued: {'identifier': 'twizy_sensor_kit_description', 'dependencies': OrderedDict()}
+[0.001485] (twizy_sensor_kit_launch) JobQueued: {'identifier': 'twizy_sensor_kit_launch', 'dependencies': OrderedDict([('common_sensor_launch', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch')])}
+[0.001530] (common_sensor_launch) JobStarted: {'identifier': 'common_sensor_launch'}
+[0.013302] (twizy_sensor_kit_description) JobStarted: {'identifier': 'twizy_sensor_kit_description'}
+[0.018234] (common_sensor_launch) JobProgress: {'identifier': 'common_sensor_launch', 'progress': 'cmake'}
+[0.019667] (common_sensor_launch) Command: {'cmd': ['/usr/bin/cmake', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/common_sensor_launch', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.022322] (twizy_sensor_kit_description) JobProgress: {'identifier': 'twizy_sensor_kit_description', 'progress': 'cmake'}
+[0.024584] (twizy_sensor_kit_description) JobProgress: {'identifier': 'twizy_sensor_kit_description', 'progress': 'build'}
+[0.024621] (twizy_sensor_kit_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description', '--', '-j20', '-l20'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.046784] (twizy_sensor_kit_description) CommandEnded: {'returncode': 0}
+[0.062186] (twizy_sensor_kit_description) JobProgress: {'identifier': 'twizy_sensor_kit_description', 'progress': 'install'}
+[0.069104] (twizy_sensor_kit_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073895] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.074254] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.074689] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/urdf/sensor_kit.xacro\n'}
+[0.074947] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/urdf/sensors.xacro\n'}
+[0.075097] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/config/sensor_kit_calibration.yaml\n'}
+[0.075291] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/config/sensors_calibration.yaml\n'}
+[0.075482] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/package_run_dependencies/twizy_sensor_kit_description\n'}
+[0.075627] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/parent_prefix_path/twizy_sensor_kit_description\n'}
+[0.075722] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/ament_prefix_path.sh\n'}
+[0.075858] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/ament_prefix_path.dsv\n'}
+[0.075954] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/path.sh\n'}
+[0.076150] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/environment/path.dsv\n'}
+[0.076237] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.bash\n'}
+[0.076282] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.sh\n'}
+[0.076437] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.zsh\n'}
+[0.076497] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/local_setup.dsv\n'}
+[0.076752] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/package.dsv\n'}
+[0.082192] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/ament_index/resource_index/packages/twizy_sensor_kit_description\n'}
+[0.082307] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/cmake/twizy_sensor_kit_descriptionConfig.cmake\n'}
+[0.082429] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/cmake/twizy_sensor_kit_descriptionConfig-version.cmake\n'}
+[0.082528] (twizy_sensor_kit_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/package.xml\n'}
+[0.084153] (twizy_sensor_kit_description) CommandEnded: {'returncode': 0}
+[0.099471] (-) TimerEvent: {}
+[0.117011] (twizy_sensor_kit_description) JobEnded: {'identifier': 'twizy_sensor_kit_description', 'rc': 0}
+[0.199757] (-) TimerEvent: {}
+[0.300259] (-) TimerEvent: {}
+[0.373611] (common_sensor_launch) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400560] (-) TimerEvent: {}
+[0.501199] (-) TimerEvent: {}
+[0.601785] (-) TimerEvent: {}
+[0.702455] (-) TimerEvent: {}
+[0.803065] (-) TimerEvent: {}
+[0.903672] (-) TimerEvent: {}
+[1.004219] (-) TimerEvent: {}
+[1.104896] (-) TimerEvent: {}
+[1.205610] (-) TimerEvent: {}
+[1.306285] (-) TimerEvent: {}
+[1.406943] (-) TimerEvent: {}
+[1.507651] (-) TimerEvent: {}
+[1.608168] (-) TimerEvent: {}
+[1.708794] (-) TimerEvent: {}
+[1.809365] (-) TimerEvent: {}
+[1.909914] (-) TimerEvent: {}
+[2.010506] (-) TimerEvent: {}
+[2.111201] (-) TimerEvent: {}
+[2.212014] (-) TimerEvent: {}
+[2.312770] (-) TimerEvent: {}
+[2.413476] (-) TimerEvent: {}
+[2.514060] (-) TimerEvent: {}
+[2.575819] (common_sensor_launch) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.614274] (-) TimerEvent: {}
+[2.715057] (-) TimerEvent: {}
+[2.815765] (-) TimerEvent: {}
+[2.916333] (-) TimerEvent: {}
+[3.016915] (-) TimerEvent: {}
+[3.117525] (-) TimerEvent: {}
+[3.218121] (-) TimerEvent: {}
+[3.318773] (-) TimerEvent: {}
+[3.419484] (-) TimerEvent: {}
+[3.520137] (-) TimerEvent: {}
+[3.621030] (-) TimerEvent: {}
+[3.721800] (-) TimerEvent: {}
+[3.822479] (-) TimerEvent: {}
+[3.923127] (-) TimerEvent: {}
+[4.023749] (-) TimerEvent: {}
+[4.124458] (-) TimerEvent: {}
+[4.222811] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.224541] (-) TimerEvent: {}
+[4.324959] (-) TimerEvent: {}
+[4.425543] (-) TimerEvent: {}
+[4.526167] (-) TimerEvent: {}
+[4.626629] (-) TimerEvent: {}
+[4.637952] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.650482] (common_sensor_launch) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.651312] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.652097] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.658245] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.726919] (-) TimerEvent: {}
+[4.827503] (-) TimerEvent: {}
+[4.928062] (-) TimerEvent: {}
+[5.028854] (-) TimerEvent: {}
+[5.063485] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.077270] (common_sensor_launch) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.077758] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.078702] (common_sensor_launch) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.081859] (common_sensor_launch) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[5.129082] (-) TimerEvent: {}
+[5.227443] (common_sensor_launch) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.229232] (-) TimerEvent: {}
+[5.292916] (common_sensor_launch) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.329417] (-) TimerEvent: {}
+[5.394743] (common_sensor_launch) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.429623] (-) TimerEvent: {}
+[5.530304] (-) TimerEvent: {}
+[5.630905] (-) TimerEvent: {}
+[5.731439] (-) TimerEvent: {}
+[5.832018] (-) TimerEvent: {}
+[5.932807] (-) TimerEvent: {}
+[6.033505] (-) TimerEvent: {}
+[6.134132] (-) TimerEvent: {}
+[6.234751] (-) TimerEvent: {}
+[6.335371] (-) TimerEvent: {}
+[6.436018] (-) TimerEvent: {}
+[6.536579] (-) TimerEvent: {}
+[6.637273] (-) TimerEvent: {}
+[6.738045] (-) TimerEvent: {}
+[6.838646] (-) TimerEvent: {}
+[6.939257] (-) TimerEvent: {}
+[7.039933] (-) TimerEvent: {}
+[7.140671] (-) TimerEvent: {}
+[7.241317] (-) TimerEvent: {}
+[7.341811] (-) TimerEvent: {}
+[7.442332] (-) TimerEvent: {}
+[7.543024] (-) TimerEvent: {}
+[7.643639] (-) TimerEvent: {}
+[7.744176] (-) TimerEvent: {}
+[7.844906] (-) TimerEvent: {}
+[7.945595] (-) TimerEvent: {}
+[8.046205] (-) TimerEvent: {}
+[8.146720] (-) TimerEvent: {}
+[8.247278] (-) TimerEvent: {}
+[8.347962] (-) TimerEvent: {}
+[8.448480] (-) TimerEvent: {}
+[8.549191] (-) TimerEvent: {}
+[8.649918] (-) TimerEvent: {}
+[8.750696] (-) TimerEvent: {}
+[8.851401] (-) TimerEvent: {}
+[8.952048] (-) TimerEvent: {}
+[9.052728] (-) TimerEvent: {}
+[9.153392] (-) TimerEvent: {}
+[9.254225] (-) TimerEvent: {}
+[9.354965] (-) TimerEvent: {}
+[9.455646] (-) TimerEvent: {}
+[9.556207] (-) TimerEvent: {}
+[9.656829] (-) TimerEvent: {}
+[9.757311] (-) TimerEvent: {}
+[9.857920] (-) TimerEvent: {}
+[9.958391] (-) TimerEvent: {}
+[10.059058] (-) TimerEvent: {}
+[10.159708] (-) TimerEvent: {}
+[10.260310] (-) TimerEvent: {}
+[10.360813] (-) TimerEvent: {}
+[10.461313] (-) TimerEvent: {}
+[10.531097] (common_sensor_launch) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.533251] (common_sensor_launch) StdoutLine: {'line': b'-- Generating done\n'}
+[10.533765] (common_sensor_launch) StdoutLine: {'line': b'-- Build files have been written to: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch\n'}
+[10.538642] (common_sensor_launch) CommandEnded: {'returncode': 0}
+[10.538913] (common_sensor_launch) JobProgress: {'identifier': 'common_sensor_launch', 'progress': 'build'}
+[10.538933] (common_sensor_launch) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch', '--', '-j20', '-l20'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.563009] (common_sensor_launch) CommandEnded: {'returncode': 0}
+[10.563634] (-) TimerEvent: {}
+[10.577063] (common_sensor_launch) JobProgress: {'identifier': 'common_sensor_launch', 'progress': 'install'}
+[10.577994] (common_sensor_launch) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/common_sensor_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.582440] (common_sensor_launch) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.582782] (common_sensor_launch) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.582986] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/launch/nebula_node_container.launch.py\n'}
+[10.583102] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/launch/velodyne_VLP16.launch.xml\n'}
+[10.583359] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/launch/velodyne_VLS128.launch.xml\n'}
+[10.583452] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/ament_index/resource_index/package_run_dependencies/common_sensor_launch\n'}
+[10.583685] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/ament_index/resource_index/parent_prefix_path/common_sensor_launch\n'}
+[10.583937] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/environment/ament_prefix_path.sh\n'}
+[10.584026] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/environment/ament_prefix_path.dsv\n'}
+[10.584104] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/environment/path.sh\n'}
+[10.584302] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/environment/path.dsv\n'}
+[10.584417] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/local_setup.bash\n'}
+[10.584655] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/local_setup.sh\n'}
+[10.584714] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/local_setup.zsh\n'}
+[10.584751] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/local_setup.dsv\n'}
+[10.584786] (common_sensor_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/package.dsv\n'}
+[10.589701] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/ament_index/resource_index/packages/common_sensor_launch\n'}
+[10.589835] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/cmake/common_sensor_launchConfig.cmake\n'}
+[10.590022] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/cmake/common_sensor_launchConfig-version.cmake\n'}
+[10.590111] (common_sensor_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch/share/common_sensor_launch/package.xml\n'}
+[10.593035] (common_sensor_launch) CommandEnded: {'returncode': 0}
+[10.626846] (common_sensor_launch) JobEnded: {'identifier': 'common_sensor_launch', 'rc': 0}
+[10.627933] (twizy_sensor_kit_launch) JobStarted: {'identifier': 'twizy_sensor_kit_launch'}
+[10.663809] (-) TimerEvent: {}
+[10.764552] (-) TimerEvent: {}
+[10.816248] (twizy_sensor_kit_launch) JobProgress: {'identifier': 'twizy_sensor_kit_launch', 'progress': 'cmake'}
+[10.818154] (twizy_sensor_kit_launch) Command: {'cmd': ['/usr/bin/cmake', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_launch', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble')]), 'shell': False}
+[10.864928] (-) TimerEvent: {}
+[10.965450] (-) TimerEvent: {}
+[11.066128] (-) TimerEvent: {}
+[11.166845] (-) TimerEvent: {}
+[11.168873] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.267176] (-) TimerEvent: {}
+[11.367842] (-) TimerEvent: {}
+[11.468579] (-) TimerEvent: {}
+[11.569056] (-) TimerEvent: {}
+[11.669530] (-) TimerEvent: {}
+[11.769905] (-) TimerEvent: {}
+[11.870544] (-) TimerEvent: {}
+[11.971199] (-) TimerEvent: {}
+[12.071912] (-) TimerEvent: {}
+[12.172591] (-) TimerEvent: {}
+[12.273164] (-) TimerEvent: {}
+[12.373867] (-) TimerEvent: {}
+[12.474346] (-) TimerEvent: {}
+[12.574888] (-) TimerEvent: {}
+[12.675565] (-) TimerEvent: {}
+[12.776417] (-) TimerEvent: {}
+[12.865741] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[12.876588] (-) TimerEvent: {}
+[12.977016] (-) TimerEvent: {}
+[13.077616] (-) TimerEvent: {}
+[13.178111] (-) TimerEvent: {}
+[13.278800] (-) TimerEvent: {}
+[13.379634] (-) TimerEvent: {}
+[13.480125] (-) TimerEvent: {}
+[13.580730] (-) TimerEvent: {}
+[13.681393] (-) TimerEvent: {}
+[13.781997] (-) TimerEvent: {}
+[13.882689] (-) TimerEvent: {}
+[13.983200] (-) TimerEvent: {}
+[14.083808] (-) TimerEvent: {}
+[14.184459] (-) TimerEvent: {}
+[14.284951] (-) TimerEvent: {}
+[14.335135] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.385174] (-) TimerEvent: {}
+[14.485739] (-) TimerEvent: {}
+[14.586694] (-) TimerEvent: {}
+[14.687189] (-) TimerEvent: {}
+[14.759825] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.772411] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[14.772807] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.773211] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.776815] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.787392] (-) TimerEvent: {}
+[14.888144] (-) TimerEvent: {}
+[14.988724] (-) TimerEvent: {}
+[15.089138] (-) TimerEvent: {}
+[15.166883] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.177375] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.177717] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.178448] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.182001] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.5 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[15.189368] (-) TimerEvent: {}
+[15.289979] (-) TimerEvent: {}
+[15.359912] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[15.390161] (-) TimerEvent: {}
+[15.406398] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[15.474149] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[15.490409] (-) TimerEvent: {}
+[15.590744] (-) TimerEvent: {}
+[15.691339] (-) TimerEvent: {}
+[15.791813] (-) TimerEvent: {}
+[15.892518] (-) TimerEvent: {}
+[15.993095] (-) TimerEvent: {}
+[16.093685] (-) TimerEvent: {}
+[16.194321] (-) TimerEvent: {}
+[16.294853] (-) TimerEvent: {}
+[16.395557] (-) TimerEvent: {}
+[16.496114] (-) TimerEvent: {}
+[16.596712] (-) TimerEvent: {}
+[16.697281] (-) TimerEvent: {}
+[16.797746] (-) TimerEvent: {}
+[16.898484] (-) TimerEvent: {}
+[16.999088] (-) TimerEvent: {}
+[17.099615] (-) TimerEvent: {}
+[17.199925] (-) TimerEvent: {}
+[17.300460] (-) TimerEvent: {}
+[17.400984] (-) TimerEvent: {}
+[17.501575] (-) TimerEvent: {}
+[17.602150] (-) TimerEvent: {}
+[17.702577] (-) TimerEvent: {}
+[17.803092] (-) TimerEvent: {}
+[17.903743] (-) TimerEvent: {}
+[18.004531] (-) TimerEvent: {}
+[18.105138] (-) TimerEvent: {}
+[18.205662] (-) TimerEvent: {}
+[18.306331] (-) TimerEvent: {}
+[18.406887] (-) TimerEvent: {}
+[18.507409] (-) TimerEvent: {}
+[18.607802] (-) TimerEvent: {}
+[18.708135] (-) TimerEvent: {}
+[18.808526] (-) TimerEvent: {}
+[18.909112] (-) TimerEvent: {}
+[19.009615] (-) TimerEvent: {}
+[19.110117] (-) TimerEvent: {}
+[19.210871] (-) TimerEvent: {}
+[19.311377] (-) TimerEvent: {}
+[19.411863] (-) TimerEvent: {}
+[19.512523] (-) TimerEvent: {}
+[19.613254] (-) TimerEvent: {}
+[19.682768] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.696247] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Generating done\n'}
+[19.697536] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Build files have been written to: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch\n'}
+[19.703266] (twizy_sensor_kit_launch) CommandEnded: {'returncode': 0}
+[19.704519] (twizy_sensor_kit_launch) JobProgress: {'identifier': 'twizy_sensor_kit_launch', 'progress': 'build'}
+[19.704626] (twizy_sensor_kit_launch) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch', '--', '-j20', '-l20'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble')]), 'shell': False}
+[19.713472] (-) TimerEvent: {}
+[19.731962] (twizy_sensor_kit_launch) CommandEnded: {'returncode': 0}
+[19.746642] (twizy_sensor_kit_launch) JobProgress: {'identifier': 'twizy_sensor_kit_launch', 'progress': 'install'}
+[19.747791] (twizy_sensor_kit_launch) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch'], 'cwd': '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/robin'), ('OLDPWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/twizy_sensor_kit_description'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robin'), ('NAME', 'DESKTOP-3BE0D95'), ('WSL_INTEROP', '/run/WSL/665_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/robin/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/robin/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/robin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/robin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/robin/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/common_sensor_launch:/opt/ros/humble')]), 'shell': False}
+[19.751979] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[19.752384] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.752892] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/camera.launch.xml\n'}
+[19.758160] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/gnss.launch.xml\n'}
+[19.763289] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/imu.launch.xml\n'}
+[19.768622] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/lidar.launch.xml\n'}
+[19.774024] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/pointcloud_preprocessor.launch.py\n'}
+[19.779392] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/launch/sensing.launch.xml\n'}
+[19.785033] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/data/traffic_light_camera.yaml\n'}
+[19.790250] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/config/diagnostic_aggregator/sensor_kit.param.yaml\n'}
+[19.795690] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/config/dummy_diag_publisher/sensor_kit.param.yaml\n'}
+[19.800820] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/ament_index/resource_index/package_run_dependencies/twizy_sensor_kit_launch\n'}
+[19.801076] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/ament_index/resource_index/parent_prefix_path/twizy_sensor_kit_launch\n'}
+[19.801134] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/environment/ament_prefix_path.sh\n'}
+[19.801242] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/environment/ament_prefix_path.dsv\n'}
+[19.801415] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/environment/path.sh\n'}
+[19.801472] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/environment/path.dsv\n'}
+[19.801670] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/local_setup.bash\n'}
+[19.801802] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/local_setup.sh\n'}
+[19.802086] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/local_setup.zsh\n'}
+[19.802176] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/local_setup.dsv\n'}
+[19.802227] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/package.dsv\n'}
+[19.806807] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/ament_index/resource_index/packages/twizy_sensor_kit_launch\n'}
+[19.807043] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/cmake/twizy_sensor_kit_launchConfig.cmake\n'}
+[19.807170] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/cmake/twizy_sensor_kit_launchConfig-version.cmake\n'}
+[19.807210] (twizy_sensor_kit_launch) StdoutLine: {'line': b'-- Symlinking: /home/robin/MCAV/mcav_autoware_sensor_kit_launch/install/twizy_sensor_kit_launch/share/twizy_sensor_kit_launch/package.xml\n'}
+[19.813686] (-) TimerEvent: {}
+[19.814512] (twizy_sensor_kit_launch) CommandEnded: {'returncode': 0}
+[19.842306] (twizy_sensor_kit_launch) JobEnded: {'identifier': 'twizy_sensor_kit_launch', 'rc': 0}
+[19.842766] (-) EventReactorShutdown: {}
