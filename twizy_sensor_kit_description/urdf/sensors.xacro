@@ -3,28 +3,32 @@
   <xacro:arg name="config_dir" default="$(find twizy_sensor_kit_description)/config"/>
   <xacro:property name="calibration" value="${xacro.load_yaml('$(arg config_dir)/sensors_calibration.yaml')}"/>
 
-  <!-- sensor kit -->
+  <!-- Sensor Kit -->
+  <!-- Assuming sensor_kit_macro has been updated to place sensors relative to chassis_joint -->
   <xacro:include filename="sensor_kit.xacro"/>
-  <xacro:sensor_kit_macro
-    parent="base_link"
-    x="${calibration['base_link']['sensor_kit_base_link']['x']}"
-    y="${calibration['base_link']['sensor_kit_base_link']['y']}"
-    z="${calibration['base_link']['sensor_kit_base_link']['z']}"
-    roll="${calibration['base_link']['sensor_kit_base_link']['roll']}"
-    pitch="${calibration['base_link']['sensor_kit_base_link']['pitch']}"
-    yaw="${calibration['base_link']['sensor_kit_base_link']['yaw']}"
+  <xacro:chassis
+    parent="chassis_joint"
+    x="${calibration['chassis_joint']['sensor_kit_base_link']['x']}"
+    y="${calibration['chassis_joint']['sensor_kit_base_link']['y']}"
+    z="${calibration['chassis_joint']['sensor_kit_base_link']['z']}"
+    roll="${calibration['chassis_joint']['sensor_kit_base_link']['roll']}"
+    pitch="${calibration['chassis_joint']['sensor_kit_base_link']['pitch']}"
+    yaw="${calibration['chassis_joint']['sensor_kit_base_link']['yaw']}"
   />
 
-  <!-- embedded sensors -->
-  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
-  <xacro:VLP-16 parent="base_link" name="velodyne_rear" topic="velodyne_rear/velodyne_points" hz="10" samples="220" gpu="false">
+  <!-- Embedded Sensors -->
+  <!-- If you have other sensors directly attached to base_link or chassis_joint, include them here -->
+  <!-- Example for a Velodyne LiDAR attached to chassis_joint -->
+  <!-- <xacro:include filename="$(find twizy_vehicle_description)/urdf/sensors/VLP-16.urdf.xacro"/>
+  <xacro:VLP-16 parent="chassis_joint" name="velodyne_rear" topic="velodyne_rear/velodyne_points" hz="10" samples="220" gpu="false">
     <origin
-      xyz="${calibration['base_link']['velodyne_rear_base_link']['x']}
-           ${calibration['base_link']['velodyne_rear_base_link']['y']}
-           ${calibration['base_link']['velodyne_rear_base_link']['z']}"
-      rpy="${calibration['base_link']['velodyne_rear_base_link']['roll']}
-           ${calibration['base_link']['velodyne_rear_base_link']['pitch']}
-           ${calibration['base_link']['velodyne_rear_base_link']['yaw']}"
+      xyz="${calibration['chassis_joint']['velodyne_rear_base_link']['x']}
+           ${calibration['chassis_joint']['velodyne_rear_base_link']['y']}
+           ${calibration['chassis_joint']['velodyne_rear_base_link']['z']}"
+      rpy="${calibration['chassis_joint']['velodyne_rear_base_link']['roll']}
+           ${calibration['chassis_joint']['velodyne_rear_base_link']['pitch']}
+           ${calibration['chassis_joint']['velodyne_rear_base_link']['yaw']}"
     />
-  </xacro:VLP-16>
+  </xacro:VLP-16> -->
+  
 </robot>

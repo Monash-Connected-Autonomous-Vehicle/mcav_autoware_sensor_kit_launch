@@ -1,84 +1,84 @@
-sensor_kit_base_link:
-  camera0/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+chassis:
+  front_left_camera_link:
+    x: -0.04
+    y: 0.12
+    z: 1.3
     roll: 0.0
-    pitch: 0.0
+    pitch: 0.087
     yaw: 0.0
-  camera1/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+  front_right_camera_link:
+    x: -0.04
+    y: -0.12
+    z: 1.3
     roll: 0.0
-    pitch: 0.0
+    pitch: 0.087
     yaw: 0.0
-  camera2/camera_link:
-    x: 0.0
+  front_center_camera_link:
+    x: -0.04
     y: 0.0
-    z: 0.0
+    z: 1.3
     roll: 0.0
-    pitch: 0.0
+    pitch: 0.087
     yaw: 0.0
-  camera3/camera_link:
-    x: 0.0
+  rear_center_camera_link:
+    x: -1.26
     y: 0.0
-    z: 0.0
+    z: 1.28
     roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
-  camera4/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    pitch: 0.2618
+    yaw: 3.14
+  right_forward_camera_link:
+    x: -0.95
+    y: -0.42
+    z: 1.2
     roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
-  camera5/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    pitch: 0.244
+    yaw: -1.12
+  right_rearward_camera_link:
+    x: -1.05
+    y: -0.42
+    z: 1.2
     roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
-  camera6/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    pitch: 0.244
+    yaw: -2.18
+  left_forward_camera_link:
+    x: -0.95
+    y: 0.4
+    z: 1.2
     roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
-  camera8/camera_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    pitch: 0.2967
+    yaw: 1.12
+  left_rearward_camera_link:
+    x: -1.05
+    y: 0.39
+    z: 1.2
     roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
+    pitch: 0.2967
+    yaw: 2.18
 
   velodyne_top_base_link:
-    x: 0.0
+    x: -0.681
     y: 0.0
-    z: 0.0
+    z: 1.445
     roll: 0.0
-    pitch: 0.0
+    pitch: -0.02618 
     yaw: 0.0
 
-  gnss_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
+  # gnss_link:
+  #   x: 0.0
+  #   y: 0.0
+  #   z: 0.0
+  #   roll: 0.0
+  #   pitch: 0.0
+  #   yaw: 0.0
 
 
-  PCAN/imu_link:
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    roll: 0.0
-    pitch: 0.0
-    yaw: 0.0
+  # PCAN/imu_link:
+  #   x: 0.0
+  #   y: 0.0
+  #   z: 0.0
+  #   roll: 0.0
+  #   pitch: 0.0
+  #   yaw: 0.0
 
-#include 8 ultrasonic sensors ? 
+
