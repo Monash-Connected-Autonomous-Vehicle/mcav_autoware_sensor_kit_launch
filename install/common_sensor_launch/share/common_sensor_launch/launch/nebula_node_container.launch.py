@@ -1,1 +1,0 @@
-/home/robin/MCAV/mcav_autoware_sensor_kit_launch/common_sensor_launch/launch/nebula_node_container.launch.py

@@ -1,1 +1,0 @@
-/home/robin/MCAV/mcav_autoware_sensor_kit_launch/build/twizy_sensor_kit_launch/ament_cmake_core/twizy_sensor_kit_launchConfig-version.cmake
