@@ -3,14 +3,26 @@
     <xacro:include filename="$(find twizy_sensor_kit_description)/urdf/VLP-16.urdf.xacro"/>
     <xacro:include filename="$(find twizy_sensor_kit_description)/urdf/cameras.urdf.xacro"/>
     <xacro:include filename="$(find twizy_vehicle_description)/urdf/bases/sd_twizy_body.urdf.xacro"/>
-    <xacro:include filename="$(find vehicle_model)/urdf/wheels/sd_twizy_suspension.urdf.xacro" /> 
+    <xacro:include filename="$(find twizy_vehicle_description)/urdf/wheels/sd_twizy_suspension.urdf.xacro" /> 
   
     <xacro:arg name="config_dir" default="$(find twizy_sensor_kit_description)/config"/>
+    
+    <!--
     <xacro:property name="calibration" value="${xacro.load_yaml('$(arg config_dir)/sensor_kit_calibration.yaml')}"/>
 
-    <!-- chassis from sd_twizy_base -->
-    <xacro:sd_twizy_base name="sd_twizy"/>
+-->
 
+    <xacro:property name="calibration" value="${xacro.load_yaml('/home/robin/Documents/autoware/install/twizy_sensor_kit_description/share/twizy_sensor_kit_description/config/sensor_kit_calibration.yaml')}"/>
+
+
+
+
+
+
+
+    <!-- chassis from sd_twizy_base -->
+    <xacro:sd_twizy_base name="twizy_vehicle"/>
+    
       <!-- Camera -->
     <xacro:blackfly_camera frlr_prefix="front" lrc_prefix="left" parent="chassis"
         origin="${calibration['chassis']['front_left_camera_link']['x']} ${calibration['chassis']['front_left_camera_link']['y']} ${calibration['chassis']['front_left_camera_link']['z']} ${calibration['chassis']['front_left_camera_link']['roll']} ${calibration['chassis']['front_left_camera_link']['pitch']} ${calibration['chassis']['front_left_camera_link']['yaw']}"/>

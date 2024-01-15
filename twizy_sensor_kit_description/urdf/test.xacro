@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="chassis"/>
+
+    <xacro:include filename="$(find twizy_sensor_kit_description)/urdf/cameras.urdf.xacro"/>
+
+    <xacro:blackfly_camera 
+        frlr_prefix="front" 
+        lrc_prefix="left" 
+        origin="0 0 0 0 0 0" 
+        parent="chassis" />
+</robot>
+

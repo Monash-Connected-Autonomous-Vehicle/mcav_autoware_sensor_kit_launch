@@ -12,20 +12,26 @@
 
   <exec_depend>common_sensor_launch</exec_depend>
   
-  <exec_depend>gnss_driver</exec_depend>
+  <!--<exec_depend>gnss_driver</exec_depend>
   <exec_depend>gnss_poser</exec_depend>
+  <exec_depend>sd_vehicle_interface</exec_depend> -->
   
+  <!--
   <exec_depend>neobotix_driver</exec_depend>
+  -->
   <exec_depend>velodyne_driver</exec_depend>
   <exec_depend>velodyne_pointcloud</exec_depend>
   
   <exec_depend>can_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   
-  <exec_depend>imu_driver</exec_depend>
+  <!--
+  <exec_depend>imu_driver</exec_depend> -->
   <exec_depend>imu_corrector</exec_depend>
   
-  <exec_depend>camera_driver</exec_depend>
+  <!--
+  <exec_depend>ros_gmsl_driver</exec_depend>
+  <exec_depend>camera_driver</exec_depend>-->
   
   
   <exec_depend>topic_tools</exec_depend>
