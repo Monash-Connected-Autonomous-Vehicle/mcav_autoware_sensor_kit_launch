@@ -15,7 +15,7 @@
   <xacro:include filename="sensor_kit.xacro"/>
   
   <xacro:include filename="$(find twizy_vehicle_description)/urdf/bases/sd_twizy_body.urdf.xacro"/>
-  <xacro:sd_twizy_base name="twizy_vehicle"/>
+ <!-- <xacro:sd_twizy_base name="twizy_vehicle"/>-->
   <!-- <xacro:chassis
     parent="chassis_joint"
     x="${calibration['chassis_joint']['sensor_kit_base_link']['x']}"

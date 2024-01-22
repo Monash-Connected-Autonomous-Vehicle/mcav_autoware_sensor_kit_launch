@@ -8,8 +8,12 @@ All rights reserved
 -->
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="blackfly_camera">
-    <xacro:macro name="blackfly_camera" params="frlr_prefix lrc_prefix origin parent">
 
+    <material name="red">
+     <color rgba="1 0 0 1"/> <!-- Red color; adjust RGBA values as needed -->
+    </material>
+    
+    <xacro:macro name="blackfly_camera" params="frlr_prefix lrc_prefix origin parent">
     <joint name="${frlr_prefix}_${lrc_prefix}_camera_joint" type="fixed">
       <axis xyz="0 1 0" />
       <origin xyz="${origin.split()[0]} ${origin.split()[1]} ${origin.split()[2]}" rpy="${origin.split()[3]} ${origin.split()[4]} ${origin.split()[5]}"/>

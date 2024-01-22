@@ -3,7 +3,7 @@
     <xacro:include filename="$(find twizy_sensor_kit_description)/urdf/VLP-16.urdf.xacro"/>
     <xacro:include filename="$(find twizy_sensor_kit_description)/urdf/cameras.urdf.xacro"/>
     <xacro:include filename="$(find twizy_vehicle_description)/urdf/bases/sd_twizy_body.urdf.xacro"/>
-    <xacro:include filename="$(find twizy_vehicle_description)/urdf/wheels/sd_twizy_suspension.urdf.xacro" /> 
+    <!--<xacro:include filename="$(find twizy_vehicle_description)/urdf/wheels/sd_twizy_suspension.urdf.xacro" /> -->
   
     <xacro:arg name="config_dir" default="$(find twizy_sensor_kit_description)/config"/>
     
@@ -21,7 +21,7 @@
 
 
     <!-- chassis from sd_twizy_base -->
-    <xacro:sd_twizy_base name="twizy_vehicle"/>
+    <!--=<xacro:sd_twizy_base name="twizy_vehicle"/>-->
     
       <!-- Camera -->
     <xacro:blackfly_camera frlr_prefix="front" lrc_prefix="left" parent="chassis"
